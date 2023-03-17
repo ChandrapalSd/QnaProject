@@ -1,0 +1,51 @@
+<!doctype html>
+<html xmlns:th="http://www.thymeleaf.org"
+      lang="en" class="h-100">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+
+    <title th:text="#{common.header.title}">IGNOU FORUM</title>
+    <link th:replace="~{fragments/styles}">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">  
+</head>
+<body class="d-flex flex-column h-100">
+<header>
+    <div th:replace="~{fragments/navigation}"></div>
+</header>
+<main class="d-flex flex-grow-1">
+    <div class="container-fluid d-flex flex-grow-1">
+        <div class="row d-flex flex-grow-1">
+            <div class="col-md-2 col-lg-2 offset-lg-1 d-none d-md-block pr-0">
+                <div th:replace="~{fragments/sidebar :: sidebar}"></div>
+            </div>
+            <div class="col-md-10 col-lg-8 col-xl-7 bg-white border p-0 h-auto">
+                <div class="content m-3">
+                    <div class="section-title mb-3"><h3>Contact US</h3></div>
+                    <div >
+                        <p><span style="font-size:16px"><span style="font-family:Georgia,serif">Hey there,</span></span></p>
+                        <p><span style="font-size:16px"><span style="font-family:Georgia,serif">I am <strong>Chandrapal Singh</strong>, student at&nbsp;&nbsp;Indira Gandhi National Open University.</span></span></p>
+                        <p><span style="font-size:16px"><span style="font-family:Georgia,serif">This was my <u>BCA</u> final sem project (BCSP064) while I was a student&nbsp;at &nbsp;Indira Gandhi National Open University&nbsp;(IGNOU) (July 2020 ~ July 2023)</span></span></p>
+                        <p><span style="font-size:16px"><span style="font-family:Georgia,serif"><strong>You can contact me here</strong></span></span></p>
+                        
+                          
+                        <a target="_blank" href="https://twitter.com/chandrapalsd" > <i class="fa fa-twitter" > </i> </a>
+                        <a target="_blank" href="https://www.linkedin.com/in/chandrapalsd/" > <i class="fa fa-linkedin" > </i> </a>
+                        <a target="_blank" href="https://github.com/chandrapalsd/" > <i class="fa fa-github" > </i> </a>
+                        <a target="_blank" href="https://www.youtube.com/channel/UC6xMs7hHifc1EYpcdi7HTmg" > <i class="fa fa-youtube" > </i> </a>
+                        <a target="_blank" href="mailto:chandrapalwifi4@gmail.com" > <i class="fa fa-envelope" > </i> </a>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </div>
+</main>
+<footer class="footer">
+    <div th:replace="~{fragments/footer :: footer}"></div>
+</footer>
+
+</body>
+</html>
